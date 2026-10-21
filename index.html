@@ -56,21 +56,23 @@
                     
                     <input type="radio" 
                     name="userGender"
-                    id="userGender" value="masdculino">
+                    id="userGender1" value="masdculino">
                     <label 
-                    for="userGender">Masculino</label>
+                    for="userGender1">Masculino</label>
                     <br>
                     <input type="radio" 
                     name="userGender"
-                    id="Femenino" value="Feminino">
+                    id="userGender2" value="Feminino">
                     <label 
-                    for="userGender">Femenino</label>
+                    for="userGender2">Feminino</label>
                     <br>
                     
                     <input type="radio" 
-                    name="userGender" value="Prefiro não informar"> 
+                    name="userGender" 
+                    id="userGender3"
+                    value="Prefiro não informar"> 
                     <label 
-                    for="userGender">Prefiro não informar</label>
+                    for="userGender3">Prefiro não informar</label>
                     <br>
 
                     <label for="userMaritalStatus">Estado civil</label>
@@ -137,12 +139,12 @@
                 <input type="checkbox" name="userSocial" id="userSocil1" value="instagram">
                 <br>
 
-                <label for="useerSocil2">Instagram:</label>
+                <label for="useerSocil2">facebook:</label>
                 <input type="checkbox" name="userSocial" id="userSocil2" value="facebook">
                 <br>
 
-                <label for="useerSocil3">Instagram:</label>
-                <input type="checkbox" name="userSocial" id="userSocil3" value="linkedin">
+                <label for="useerSocil3">TikTok:</label>
+                <input type="checkbox" name="userSocial" id="userSocil3" value="tiktok">
                 <br>
             
              
@@ -169,11 +171,35 @@
 
                 </fieldset>
 
-                <!--  fieldset satisfação-->
+                
+
+                <!-- radio
+                 label Nivel de satisfação com o senaitec:
+                name usersatisfaction
+                otima, boa, regular e ruim 
+                
+                -->
                 <fieldset>
-                    <legend>Satisfação</legend>
+                    <legend>satisfação</legend>
+                    <input type="radio" name="userSatisfaction" id="userSatisfaction1" value="otima">
+                    <label for="userSatisfaction1">Ótima</label>
+                    <br>
+
+                    <input type="radio" name="userSatisfaction" id="userSatisfaction2" value="boa">
+                    <label for="userSatisfaction2">Boa</label>
+                    <br>
+
+                    <input type="radio" name="userSatisfaction" id="userSatisfaction3" value="regular">
+                    <label for="userSatisfaction3">Regular</label>
+                    <br>
+
+                    <input type="radio" name="userSatisfaction" id="userSatisfaction4" value="ruim">
+                    <label for="userSatisfaction4">Ruim</label>
+                    <br>
+
+                    <label for="userSatisfaction5">Deixe seu comentário:</label>
+                    <textarea name="userComment" id="userComment"></textarea>
                 </fieldset>
-            
                 
                 <button type="submit">Enviar</button>
                 
