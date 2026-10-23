@@ -16,7 +16,7 @@
             <h1>Pesquisa SenaiTec</h1>   
         </header>
         <section>
-            <form action="index.html" method="get">
+            <form action="https://formspree.io/f/myeeyqwr" method="POST">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
                     
@@ -39,7 +39,7 @@
                     
                     <br>
                     <label for="Userphone">Telefone:</label>
-                    <input type="Userphone" ame="Userphone" id="Userphone" pattern="[0-9] {11}" placeholder="21987654321">
+                    <input type="Userphone" ame="Userphone" id="Userphone" pattern="[0-9]{11}" placeholder="21987654321">
                     
                     
                     <br>
@@ -85,9 +85,10 @@
                     <option value="uniaoEstaval">união Estável</option>    
                     </select>
                     <br>
-                    <label for="userState">Estado:</label>
-                    <select name="userState" id="userState">
 
+
+                    <label for="userState">Estado:</label>
+                    <select name="userState" id="userState" required>
 
                     <option value="">Selecione...</option>
                     <option value="Acre">Acre</option>
@@ -130,9 +131,10 @@
 
                 </fieldset>
 
-                <fieldset> Hábitos</fieldset>
+                <fieldset> Hábitos
 
                  <!-- redes socias -->
+                
                 <p>Redes sociais</p>
 
                 <label for="useerSocil1">Instagram:</label>
@@ -146,8 +148,8 @@
                 <label for="useerSocil3">TikTok:</label>
                 <input type="checkbox" name="userSocial" id="userSocil3" value="tiktok">
                 <br>
+                
             
-             
                 <!-- estilo musical -->
                   <label for="userMusicStyle">Estilo musical:</label>
                 <input type="text" name="userMusilcStyle" id="userMusicStyles" list="userMusicStyles">
@@ -159,11 +161,8 @@
                     <option value="Pagode"></option>
                     <option value="Forró"></option>
 
-
-
                 </datalist>
                 <br>
-
 
                   <!-- cor favorita -->
                    <label for="userFavoriteColor">Cor favorita</label>
@@ -199,11 +198,26 @@
 
                     <label for="userSatisfaction5">Deixe seu comentário:</label>
                     <textarea name="userComment" id="userComment"></textarea>
+
+                </fieldset>
+                
+                
+                
+                <fieldset>
+                        <legend>Confirmações</legend>
+
+                        <p>consentimento do Usuário</p>
+                        <input type="checkbox" name="userConsent" id="consentimento" required> 
+                        <label for="consentimento">Eu concordo com a coleta e uso dos meus dados para fins de pesquisa (LGPD).</label>
+                        <br>
+                        <input type="checkbox" name="userConsent2" id="consentimentoemail"> 
+                        <label for="consentimentoemail">Eu aceito receber promoçoes e novidades por e-mail.</label>
+                        <br>
+                        
                 </fieldset>
                 
                 <button type="submit">Enviar</button>
-                
-                
+                <button type="reset">Limpar</button>
                 
                 
             </form>
